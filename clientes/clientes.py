@@ -15,9 +15,19 @@ texto = '''Desea realizar otra acción con los clientes?
 '''
 autos_o_clientes = 'clientes'
 
-def clientes(leer_archivo, escribir_archivo, listar_archvo, json, tarea):
+def clientes(leer_archivo, escribir_archivo, listar_archvo, json, tarea, crear_pdf):
     clientes = leer_archivo(ruta_clientes, json)
-    print('Que desea hacer con los clientes? \n 1: Crear \n 2: Editar \n 3: Eliminar \n 4: Listar por documento \n 5: Listar por nombres \n 6: Listar por apellido \n 7: Listar por nombre y apellido \n 0: Salir')
+    print('''
+          Que desea hacer con los clientes?
+          1: Crear 
+          2: Editar 
+          3: Eliminar 
+          4: Listar por documento 
+          5: Listar por nombres  
+          6: Listar por apellido 
+          7: Listar por nombre y apellido 
+          8: Generar pdf de lista de clientes 
+          0: Salir''')
     accion_cliente = int(input())
     while accion_cliente != 0:
         match accion_cliente:
@@ -48,5 +58,9 @@ def clientes(leer_archivo, escribir_archivo, listar_archvo, json, tarea):
             case 7:
                 print('Listar por nombre y apellido')
                 listar_archvo(clientes, 'nombre y apellido', autos_o_clientes, False, False)
+                accion_cliente = int(input(texto))
+            case 8:
+                print('Generar pdf de lista de clientes')
+                crear_pdf('lista_clientes.pdf', 'Lista de clientes', clientes)
                 accion_cliente = int(input(texto))
     return int(input(tarea))

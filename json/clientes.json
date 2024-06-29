@@ -9,12 +9,21 @@
         "email": "francoitria01@gmail.com"
     },
     {
-        "id_cliente": 2,
+        "id_cliente": 3,
+        "nombre": "Ricardo",
+        "apellido": "Itria",
+        "documento": "50269741",
+        "direccion": "Al frente del club Don Bosco",
+        "telefono": "3434535200",
+        "email": "ricardopoyo67@yahoo.com"
+    },
+    {
+        "id_cliente": 4,
         "nombre": "Joaquin",
         "apellido": "Itria",
-        "documento": "58412789",
+        "documento": "41760584",
         "direccion": "Feliciano 985",
-        "telefono": "3434675489",
+        "telefono": "2944675489",
         "email": "jitria@gmail.com"
     }
 ]

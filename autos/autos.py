@@ -16,9 +16,19 @@ texto = '''¿Desea realizar otra accion con los vehiculos?
 '''
 autos_o_clientes = 'autos'
 
-def autos(leer_archivo, escribir_archivo, listar_archvo, json, tarea):
+def autos(leer_archivo, escribir_archivo, listar_archvo, json, tarea, crear_pdf):
     vehiculos = leer_archivo(ruta_vehiculos, json)
-    print('Que desea hacer con los vehiculos? \n 1: Crear \n 2: Editar \n 3: Eliminar \n 4: Listar por patente \n 5: Listar por marca \n 6: Listar por modelo \n 7: Listar por precio de compra \n 8: Listar por precio de venta \n 0: Salir')
+    print('''Que desea hacer con los vehiculos? 
+          1: Crear 
+          2: Editar 
+          3: Eliminar 
+          4: Listar por patente 
+          5: Listar por marca 
+          6: Listar por modelo 
+          7: Listar por precio de compra 
+          8: Listar por precio de venta
+          9: Generar pdf con la lista de los vehiculos 
+          0: Salir''')
     accion_vehiculo = int(input())
     while accion_vehiculo != 0:
         match accion_vehiculo:
@@ -53,5 +63,9 @@ def autos(leer_archivo, escribir_archivo, listar_archvo, json, tarea):
             case 8:
                 print('Listar por precio de venta')
                 listar_archvo(vehiculos, 'precio_venta', autos_o_clientes, False, False)    
+                accion_vehiculo = int(input(texto))
+            case 9:
+                print('Generar pdf con la lista de los vehiculos')
+                crear_pdf('lista_vehiculos.pdf', 'Lista de vehiculos', vehiculos)
                 accion_vehiculo = int(input(texto))
     return int(input(tarea))
