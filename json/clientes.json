@@ -1,1 +1,29 @@
-[]
+[
+    {
+        "id_cliente": 1,
+        "nombre": "Joaquin",
+        "apellido": "Itria",
+        "documento": "48756129",
+        "direccion": "Feliciano algo",
+        "telefono": "3434403870",
+        "email": "joako98@gmail.com"
+    },
+    {
+        "id_cliente": 2,
+        "nombre": "Franco",
+        "apellido": "Itria",
+        "documento": "43349845",
+        "direccion": "Rosario del Tala 543",
+        "telefono": "3434403870",
+        "email": "franoitria01@gmail.com"
+    },
+    {
+        "id_cliente": 3,
+        "nombre": "Tania",
+        "apellido": "Nosetto",
+        "documento": "45698123",
+        "direccion": "Rosario del Tala 543",
+        "telefono": "343502269",
+        "email": "tmn@gmail.com"
+    }
+]

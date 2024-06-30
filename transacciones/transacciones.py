@@ -41,17 +41,17 @@ def transacciones(leer_archivo, escribir_archivo, listar_archivo, json, tarea, c
                 transaccion = escribir_archivo(ruta_transacciones, transacciones, json, texto)
             case 3:
                 print('Listar compras')
-                listar_transacciones(transacciones, 'Compra', listar_archivo, leer_archivo, json, False, False)
+                listar_transacciones(transacciones, 'Compra', listar_archivo, leer_archivo, json, False, False, False)
                 transaccion = int(input(texto))
             case 4:
                 print('Listar ventas')
-                listar_transacciones(transacciones, 'Venta', listar_archivo, leer_archivo, json, False, False)
+                listar_transacciones(transacciones, 'Venta', listar_archivo, leer_archivo, json, False, False, False)
                 transaccion = int(input(texto))
             case 5:
                 print('Listar por rango de fecha')
                 fecha_desde = input('Ingrese la fecha desde la cual desea listar (formato AAAA-MM-DD): ')
                 fecha_hasta = input('Ingrese la fecha hasta la cual desea listar (formato AAAA-MM-DD): ')
-                listar_transacciones(transacciones, False, listar_archivo, leer_archivo, json, fecha_desde, fecha_hasta)
+                listar_transacciones(transacciones, False, listar_archivo, leer_archivo, json, fecha_desde, fecha_hasta, False)
                 transaccion = int(input(texto))
             case 6:
                 print('Ver detalle de una transacción')

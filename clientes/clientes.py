@@ -11,6 +11,7 @@ texto = '''Desea realizar otra acción con los clientes?
 5: Listar por nombres 
 6: Listar por apellido
 7: Listar por nombre y apellido
+8: Generar pdf de lista de clientes 
 0: Salir
 '''
 autos_o_clientes = 'clientes'

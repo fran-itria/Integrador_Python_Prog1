@@ -24,6 +24,6 @@ def editar_auto(vehiculos):
                 vehiculos[index_arreglo]['precio_venta'] = int(input('Ingrese el precio de venta: '))
             case 9:
                 vehiculos[index_arreglo]['estado'] = input('Ingrese el estado: ')
-        accion = int(input('¿Desea editar otra propiedad? '))
+        accion = int(input('¿Desea editar otra propiedad? Si no desea editar otra propiedad coloque 0'))
     print('Vehiculo editado con exito.')
     return vehiculos

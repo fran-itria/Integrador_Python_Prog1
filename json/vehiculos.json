@@ -1,1 +1,50 @@
-[]
+[
+    {
+        "id_vehiculo": 1,
+        "numero_patente": "GRE419",
+        "marca": "Chevrolet",
+        "modelo": "Corsa",
+        "tipo": "3 puertas",
+        "año": 2020,
+        "kilometraje": 80000,
+        "precio_compra": 14000,
+        "precio_venta": 8000000,
+        "estado": "Disponible"
+    },
+    {
+        "id_vehiculo": 2,
+        "numero_patente": "ABC123",
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "tipo": "Sedán",
+        "año": 2015,
+        "kilometraje": 75000,
+        "precio_compra": 12000,
+        "precio_venta": 15000,
+        "estado": "Vendido"
+    },
+    {
+        "id_vehiculo": 3,
+        "numero_patente": "XYZ789",
+        "marca": "Ford",
+        "modelo": "Focus",
+        "tipo": "Hatchback",
+        "año": 2017,
+        "kilometraje": 50000,
+        "precio_compra": 14000,
+        "precio_venta": 17000,
+        "estado": "Reservado"
+    },
+    {
+        "id_vehiculo": 4,
+        "numero_patente": "dasd145",
+        "marca": "Ford",
+        "modelo": "Sedán",
+        "tipo": "Azul",
+        "año": 2023,
+        "kilometraje": 8000,
+        "precio_compra": 800000,
+        "precio_venta": 14000000,
+        "estado": "Disponible"
+    }
+]

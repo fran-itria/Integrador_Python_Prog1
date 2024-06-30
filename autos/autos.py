@@ -11,7 +11,8 @@ texto = '''¿Desea realizar otra accion con los vehiculos?
 5: Listar por marca 
 6: Listar por modelo 
 7: Listar por precio de compra 
-8: Listar por precio de venta 
+8: Listar por precio de venta
+9: Generar pdf con la lista de los vehiculos  
 0: Salir
 '''
 autos_o_clientes = 'autos'
